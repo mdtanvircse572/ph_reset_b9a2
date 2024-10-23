@@ -19,272 +19,234 @@ body {
   --color4: rgb(0, 0, 0);
 }
 
+.container {
 
+  max-width: 1060px;
+  width: 100%;
+  margin: 30px auto 0;
+}
 
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-      "slnt" 0;
-  background: rgb(34, 34, 34);
-}
-
-.miama {
-  /* font-family: 'Miama', sans-serif;
-  font-size: 7rem; */
-  font-family: 'Miama', sans-serif;
   font-weight: 400;
-  font-size: 7rem;
+  font-style: normal;
+  font-size: 1rem;
+  font-variation-settings: "slnt" 0;
+  color: var(--color1);
+  letter-spacing: 0%;
+}
+.banner-btn{
+  display: flex;
+  column-gap: 20px;
+  text-wrap: nowrap;
+}
+.primary-btn{
+  cursor: pointer;
+  padding: 20px 45px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-/* share styles here */
-.btn-primary {
-  width: 220px;
-  height: 50px;
-  border: none;
-  border-radius: 40px;
-  background: rgb(230, 83, 60);
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-}
-
-.btn-secondary {
-  width: 220px;
-  height: 50px;
-  border: none;
-  border-radius: 40px;
-  border: 1px solid whitesmoke;
-  background-color: black;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-}
-
-/* navbar container section styles starts  here */
-.navbar-section {
+/* header section starts */
+/* nav section start  */
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  max-width: 90vw;
+  width: 100%;
+  margin: 50px auto 20px;
 }
-
-.fitness-heading {
-  color: rgb(230, 83, 60);
-  font-size: 2.1rem;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.navbar-content {
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 39px;
-}
-
-.nav-item {
+.nav-logo h1 {
   display: flex;
-  align-items: center;
+  font-weight: 800px;
+  align-items: flex-start;
+  color: var(--color3);
+  font-style: italic;
+  text-wrap: nowrap;
+}
+.nav-items {
+  max-width: 30rem;
+  width: 100%;
+  border: 1px solid var(--color2);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.nav-items ul {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  padding-right: 4px;
-  gap: 2.8rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 194%;
-  color: white;
+  align-items: center;
+  gap: 20px;
 }
 
-#home {
-  border-radius: 30px;
-  background-color: rgb(230, 83, 60);
-  padding: 7px 15px;
+.nav-items ul li a {
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 1.35rem;
+  cursor: pointer;
 }
-
-.hambars-icon {
+.nav-items ul li a:hover {
+  color: var(--color1);
+  background: var(--color3);
+  padding: 8px 20px;
+  border-radius: 45px;
+}
+.menu{
   display: none;
 }
 
-/* navbar container section styles ends  here */
-/* banner section starts here */
-.banner-main-container {
+#home {
+  padding: 8px 20px;
+  border-radius: 45px;
+  background: var(--color3);
+}
+#home:hover {
+  background: var(--color2);
+}
+/* banner section start */
+.banner {
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  padding: 6rem;
+  margin-bottom: 50px;
 }
-
-.banner-left-content {
+.banner-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.banner-heading {
-  max-width: 530px;
-  color: rgb(255, 255, 255);
-  font-size: 4.8rem;
-  font-weight: 800;
-  text-align: left;
-
-}
-
-.banner-para {
-  max-width: 400px;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-  margin-top: 1.8rem;
-
-}
-
-.btn-div {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 1.8rem;
-  gap: 1rem;
-}
-
-.banner-img {
+  row-gap: 28px;
+  max-width: 35rem;
   width: 100%;
-  position: relative;
-
+  text-align: left
 }
-
-.free-workout-videos {
-  max-width: 192px;
-  max-height: 97px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.1);
-  padding: 5px;
-  position: absolute;
-  top: 30rem;
-  right: 5.2rem;
-}
-
-.free-workout-videos h1 {
-  font-size: 2.5rem;
+.banner-tittle {
+  color: var(--color1);
+  font-size: 4.88rem;
   font-weight: 900;
-  color: white;
+  line-height: 120%;
+}
+.shape {
+  font-family: "Style Script", serif;
 }
 
-.free-workout-videos p {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.65);
+.banner-description {
+  /* body-text */
+  color: var(--color2);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.btn1{
+  background: var(--color3);
+  color: var(--color1);
+  border: 1px solid var(--color3);
 }
 
-.tutorial-videos {
-  max-width: 192px;
-  max-height: 97px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 4px;
-  gap: 0.5rem;
+.btn1:hover{
+  background: var(--color4);
+}
+
+.btn2{
+  background: var(--color4);
+  color: var(--color1);
+  border: 1px solid var(--color1);
+}
+
+.btn2:hover{
+  background: var(--color3);
+  border: 1px solid var(--color3);
+}
+
+/* banner card style */
+.banner-img {
+  position: relative;
+  display: inline-block;
+}
+/* .card-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+} */
+.card {
   position: absolute;
-  top: 44rem;
-  right: 18rem;
+  background: rgba(0, 0, 0, 0.449);
+  color: var(--color1);
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.tr {
+  top: 12rem;
+  right: 0;
+}
+.br {
+  bottom: 8rem;
+  right: ;
 }
 
-.tutorial-videos h1 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: white;
-}
-
-.tutorial-videos p {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.65);
-}
-
-.fa-circle-play {
-  max-width: 2.8rem;
-  font-size: 2rem;
-  color: tomato;
-}
-
-/* banner section ends here */
-/* change-your-habits-container styles starts  here */
-.change-your-habits-container {
-  /* background: black; */
+.features{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.change-habit-heading {
-  font-size: 3rem;
-  font-weight: 900;
   text-align: center;
-  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.449);
+  border-radius: 10px;
+  max-width: 68rem;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 110px;
+  row-gap: 50px;
 }
-
-.change-habit-description {
-  max-width: 60rem;
-  margin: 0.9rem auto;
-  font-size: 0.9rem;
-  font-weight: 400;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.change-habit-cards {
+.feature-cards{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
-  margin-top: 3.5rem;
-}
+  justify-items: center;
+  /* border: 1px solid red; */
 
-.card-images {
-  border: 8px solid rgba(182, 187, 182, 0.249);
+}
+.feature-card{
+  width: 9rem;
+  text-align: center;
+}
+.feature-image{
+  max-width: 17rem;
+  width: 100%;
   border-radius: 50%;
-  width: 50%;
+  border: 5px solid var(--color2);
+  object-fit: cover;
 }
-
-.habit-card-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.change-habit-card {
-  width: 14.5rem;
+.feature-content{
   display: flex;
   flex-direction: column;
-
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 5px;
+  row-gap: 5px;
 }
-
-.change-habit-card h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  margin-top: 1.2rem;
+.feature-title{
+  font-weight: 900;
+  font-size: 3rem;
 }
-
-.change-habit-card p {
-  font-size: 0.9rem;
+.feature-discription{
   font-weight: 400;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: var(--color2);
 }
-
+.sub-title{
+Font weight: 600;
+Font size: 1.12rem;
+}
+.sub-des{
+  font-weight: 400;
+  font-size: 0.70rem;
+}
+/* banner section ends */
 /* change your habit styles  ends here */
 /* runner section styles starts here */
 .runner-container {
-  width: 87%;
+  width: 100%;
   margin: 5rem auto;
   background: rgba(59, 58, 58, 0.841);
   border-radius: 1.2rem;
@@ -327,21 +289,17 @@ body {
 }
 
 .runner-img {
-  width: 50%;
-  padding: 2rem;
+  max-width: 20rem;
   
 }
 
 .runner-img img {
   width: 100%;
   border-radius: 1rem;
-  object-fit: none;
-  object-position: 65% 30%;
+  object-fit: cover;
 }
 
-/* runner section styles ends here */
 /* BMI section starts here */
-/* small-center-shared-section */
 .small-center-shared-section {
   width: 100%;
   display: flex;
@@ -366,8 +324,6 @@ body {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 0.9rem;
 }
-
-/* small-center-shared-section */
 /* BMI charts and calculator section styles starts here */
 .bmi-tripleC-main-container {
   background: rgba(48, 48, 48, 0.732);
@@ -394,7 +350,7 @@ td {
   font-size: 1.8rem;
   font-weight: 900;
   text-align: left;
-  color: rgb(255, 255, 255);
+  color: var(--color1);
 }
 
 table {
@@ -403,16 +359,16 @@ table {
 }
 
 th {
-  border: 1px solid rgba(235, 232, 232, 0.403);
-  color: rgb(255, 255, 255);
+  border: 1px solid var(--color2);
+  color: var(--color1);
   font-size: 1rem;
   font-weight: 500;
   padding: 5px;
 }
 
 td {
-  border: 1px solid rgba(255, 255, 255, 0.508);
-  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--color2);
+  color: var(--color2);
   font-size: 0.9rem;
   font-weight: 400;
   text-align: left;
@@ -420,14 +376,14 @@ td {
 
 .bmi-calculation-heading-part h3 {
   text-align: left;
-  color: rgb(255, 255, 255);
+  color: var(--color1);
   font-size: 1.8rem;
   font-weight: 900;
   margin-top: 1rem;
 }
 
 .bmi-calculation-heading-part p {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color2);
   font-size: 0.9rem;
   font-weight: 400;
   text-align: left;
@@ -481,9 +437,8 @@ select,
   grid-template-columns: 1fr;
 }
 
-/* BMI charts and calculator section styles ends here */
 /* meet our team sections styles starts here */
-.meetup-team-title-section {
+.meetup-team-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -492,178 +447,102 @@ select,
   margin: 5rem auto;
 }
 
-.meetup-team-title-section h2 {
+.meetup-team-section h2 {
   font-size: 3rem;
   font-weight: 900;
   text-align: left;
   color: rgb(255, 255, 255);
 }
 
-.meetup-team-title-section p {
+.meetup-team-section p {
   width: 50%;
   font-size: 0.9rem;
   font-weight: 400;
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color2);
   margin-top: 0.9rem;
-}
-
-.meetup-team-main-container {
-  padding: 6rem;
 }
 
 .meetup-contents {
-  background: rgba(93, 91, 91, 0.553);
+  background: var(--color2);
   border-radius: 0.8rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.8rem;
-  padding: 2rem;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  justify-items: center;
 }
 
 .team-member-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.8rem;
-}
-
-.meetup-content {
-  position: relative;
+  width: 315px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  align-items: center;
 }
 
 .team-member-info {
-  position: absolute;
-  bottom: 3rem;
-  left: 2rem;
+  position: relative;
+  bottom: 20px;
+  align-items: center;
 }
 
-.team-member-info h2 {
+.meetup-content h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  text-align: center;
-  color: rgb(255, 255, 255);
+  text-align: left;
+  color: var(--color1);
 }
 
-.team-member-info p {
+.meetup-content p {
   font-size: 1rem;
   font-weight: 400;
   text-align: left;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color1);
   margin-top: 0.5rem;
 }
-
-/* Meet our team section ends here */
-/* analysis section styles starts here */
-.analysis-main-container {
-  width: 87%;
-  background: rgba(93, 91, 91, 0.553);
-  border-radius: 0.8rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.8rem;
-  padding: 5rem;
-  margin: 1rem auto;
-}
-
-.analysis-card {
-  background-color: #f2f2f244;
-  /* Replace with your desired gray */
-  border-radius: 0.8rem;
-  padding: 1.5rem;
-  box-shadow: 0 2px 5px rgba(31, 31, 31, 0.1);
-  z-index: -1;
-}
-
-#analysis-second-card {
-  margin-top: -3rem;
-  margin-bottom: 1.5rem;
-  z-index: 0;
-}
-
-.analysis-images {
+.meetup-content{
+  max-width: 20rem;
   width: 100%;
-  height: 50%;
-  border-radius: 1rem;
-  opacity: calc(90%);
+  height: auto;
 }
 
-.analysis-card h4 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-align: center;
-  color: rgb(247, 242, 242);
-  margin-top: 0.5rem;
-}
-
-.analysis-card p {
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 0.5rem;
-}
-
-/* analysis section styles ends here */
 /* Footer section starts here  */
-footer {
-  background: rgba(51, 50, 50, 0.27);
+.footer{
+  padding: 30px 10px;
+  background-color: rgb(63, 59, 59);
 }
-
-.main-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-
+.footer-main{
+display: flex;
+justify-content: space-evenly;
 }
-
-.logo {
-  color: rgb(234, 67, 41);
-  font-size: 2.1rem;
-  font-weight: 800;
-  font-style: italic;
+.fpart1 h2{
+  color: var(--color1);
 }
-
-.logo-description p {
-  width: 50%;
-  font-size: 0.9rem;
-  font-weight: 400;
-  text-align: left;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 0.9rem;
+.fpart1 p{
+  color: var(--color2);
 }
-
-.footer-content2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-
+.fpart2 h3{
+  color: var(--color1);
 }
-
-.get-start-contents {
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 600;
-  text-align: left;
+.fpart2 p{
+  color: var(--color2);
 }
-
-.get-start-contents p {
-  margin-top: 0.8rem;
+.fpart3 h3{
+  color: var(--color1);
 }
-
-hr {
-  width: 88%;
+.fpart3 p{
+  color: var(--color2);
+}
+.footer hr{
+  width: 80%;
   margin: 0 auto;
-  opacity: 0.1;
 }
 
-.copyright {
-  width: 100%;
+.copyright{
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  padding: 2rem;
+  color: var(--color2);
+  margin-top:0px;
 }
-
-/* footer section ends here */
-
+/* footer ends */

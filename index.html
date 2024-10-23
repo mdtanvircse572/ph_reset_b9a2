@@ -7,114 +7,78 @@
     <title>Fitness Center</title>
     <!-- css and responsive link -->
     <link rel="stylesheet" href="styles/fitness-hub.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <!-- fontawesome kit -->
-    <script src="https://kit.fontawesome.com/87adba0cdb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/fh-responsive.css">
 </head>
 
 <body class="inter-font">
-    <!-- header starts here  -->
     <header>
-        <!-- nav section starts here -->
-        <section class="navbar-section">
-            <div>
-                <h1 class="fitness-heading">Fitness</h1>
-            </div>
-            <div class="navbar-content">
-                <ul class="nav-item">
-                    <li><span id="home">Home</span></li>
-                    <li>Service</li>
-                    <li>Contact</li>
-                    <li>About</li>
+        <nav class="nav container">
+            <div class="nav-logo"><h1>Fitness-Hub</h1></div>
+            <div class="nav-items">
+                <ul>
+                    <li><a id="home" class="list-item" href="">Home</a></li>
+                    <li><a class="list-item" href="">Service</a></li>
+                    <li><a class="list-item" href="">Contact</a></li>
+                    <li><a class="list-item" href="">About</a></li>
                 </ul>
             </div>
-            <div class="hambars-icon">
-                <i style="color: white;" class="fa-solid fa-bars"></i>
-            </div>
-        </section>
-        <!-- nav section ends here -->
-        <!-- banner section starts here  -->
-        <section class="banner-main-container">
-            <div class="banner-left-content">
-                <h1 class="banner-heading">Get body in <span class="miama">shape</span> & stay healthy</h1>
-                <p class="banner-para">Get your body in shape and stay healthy by maintaining a balanced diet, regular
-                    exercise, sufficient rest, and staying hydrated for overall well-being and fitness.</p>
-                <div class="btn-div">
-                    <button class="btn-primary">Join Club Now!</button>
-                    <button class="btn-secondary">Download App</button>
+            <div class="menu"><img src="images/menu.png" alt=""></div>
+        </nav>
+        <section class="banner container">
+            <div class="banner-content">
+                <h3 class="banner-tittle">Get body in <span class="shape">shape</span> & stay healthy</h3>
+                <p class="banner-description">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                <div class="banner-btn">
+                    <button class="primary-btn btn1">Join Club Now!</button>
+                    <button class="primary-btn btn2">Download App</button>
                 </div>
             </div>
-            <div class="banner-right-img">
-                <img class="banner-img" src="images/Images 2.png" alt="Body builder with dumble image">
-                <div class="free-workout-videos">
-                    <h1>500+</h1>
-                    <p>Free Workout Videos</p>
+            <div class="banner-img">
+                <img src="images/Images 2.png" alt="workout-img" class="card-img">
+                <div class="card tr">
+                    500+ <br> Free Workout
                 </div>
-                <div class="tutorial-videos">
-                    <div><i class="fa-solid fa-circle-play"></i></div>
-                    <div>
-                        <h1>350+</h1>
-                        <p>Video Tutorial</p>
-                    </div>
+                <div class="card br">
+                    300+ <br> Video Tutorials
                 </div>
             </div>
         </section>
-        <!-- banner section ends here  -->
+        <sections class="features container">
+            <div class="feature-content">
+                <h2 class="feature-title">Change Your Habits </h2>
+                <p class="feature-discription">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+            <div class="feature-cards">
+                <!-- 1st card -->
+                <div class="feature-card">
+                    <img class="feature-image" src="images/image 2.png" alt="">
+                    <h3 class="sub-title">Movement</h3>
+                    <p class="sub-des">We believe fitness should be accessible to everyone.</p>
+                </div>
+                <!-- 2nd card -->
+                <div class="feature-card">
+                    <img class="feature-image" src="images/image 3.png" alt="">
+                    <h3 class="sub-title">Time</h3>
+                    <p class="sub-des">We believe fitness should be accessible to everyone.</p>
+                </div>  
+                <!-- 3rd card -->
+                <div class="feature-card">
+                    <img class="feature-image" src="images/image 4.png" alt="">
+                    <h3 class="sub-title">Practice</h3>
+                    <p class="sub-des">We believe fitness should be accessible to everyone</p>
+                </div>
+                <!-- 4th card -->
+                <div class="feature-card">
+                    <img class="feature-image" src="images/image 5.png" alt="">
+                    <h3 class="sub-title">Weight Loss</h3>
+                    <p class="sub-des">We believe fitness should be accessible to everyone.</p>
+                </div>
+            </div>
+        </sections>
     </header>
-    <!-- header ends here  -->
-    <!-- main starts here  -->
-    <main>
-        <!-- change your habit sections starts here -->
-        <section class="change-your-habits-container">
-            <!-- change your habit title starts here -->
-            <div class="change-habit-title">
-                <h2 class="change-habit-heading">Change Your Habits</h2>
-                <p class="change-habit-description">Transform your fitness by changing habits: prioritize regular
-                    exercise, eat nutritious foods, stay hydrated, get enough sleep, and maintain a positive mindset for
-                    lasting health.</p>
-            </div>
-            <!-- change your habit title endss here -->
-            <!-- change your habit cards starts here -->
-            <div class="change-habit-cards">
-                <!-- first card  -->
-                <div class="change-habit-card">
-                    <div class="habit-card-img">
-                        <img class="card-images" src="images/image 3.png" alt="push up image">
-                    </div>
-                    <h4>Movement</h4>
-                    <p>Exercise daily, eat healthily, stay hydrated, and maintain a positive attitude for fitness.</p>
-                </div>
-                <!-- second card  -->
-                <div class="change-habit-card">
-                    <div class="habit-card-img">
-                        <img class="card-images" src="images/image 2.png" alt="Time management image">
-                    </div>
-                    <h4>Time</h4>
-                    <p> Prioritize fitness, manage time effectively, exercise regularly, eat well, and stay organized.
-                    </p>
-                </div>
-                <!-- third card  -->
-                <div class="change-habit-card">
-                    <div class="habit-card-img">
-                        <img class="card-images" src="images/image 4.png" alt="Practice Image">
-                    </div>
-                    <h4>Practice</h4>
-                    <p>Stay motivated,excercise daily, set goals, track progress, and maintain a healthy lifestyle.</p>
-                </div>
-                <!-- fourth card -->
-                <div class="change-habit-card">
-                    <div class="habit-card-img">
-                        <img class="card-images" src="images/image 5.png" alt="Weight loss image">
-                    </div>
-                    <h4>Weight Loss</h4>
-                    <p>Balanced diet, regular exercise, hydration, adequate sleep, and consistency.</p>
-                </div>
-            </div>
-            <!-- change your habit cards ends here -->
-        </section>
-        <!-- change your habit section ends here -->
+    <main >
         <!-- Run an Extra  mile section starts here  -->
-        <section class="runner-container">
+        <section class="runner-container container">
             <div class="runner-content">
                 <h1>Run an Extra <br>
                     Mile Easily</h1>
@@ -130,7 +94,7 @@
         <!-- Run an Extra  mile section ends here  -->
         <!-- BMI calculator section starts here -->
         <!-- bmi title section starts here -->
-        <section class="small-center-shared-section">
+        <section class="small-center-shared-section container">
             <h2>BMI Calculator</h2>
             <p>BMI (Body Mass Index) is a measure of body fat based on height and weight, helping assess human fitness
                 and overall health.</p>
@@ -138,7 +102,7 @@
         <!-- bmi title section ends here  -->
         <!-- BMI calculator chart and calculator section starts here -->
         <!-- Tripple C meaning calculator-chart and calculator -->
-        <section class="bmi-tripleC-main-container">
+        <section class="bmi-tripleC-main-container container">
             <div class="bmi-bonding-div">
                 <!-- bmi calculator chart starts here  -->
                 <div class="bmi-calculator-chart-content">
@@ -172,9 +136,8 @@
                         </table>
                     </div>
                 </div>
-                <!-- bmi calculator chart ends here  -->
                 <!-- bmi calculator starts here -->
-                <div class="bmi-calculator">
+                <div class="bmi-calculator ">
                     <div class="bmi-calculation-heading-part">
                         <h3>Calculate your BMI</h3>
                         <p>BMI calculation is essential for assessing body fat, determining health risks, and guiding
@@ -202,175 +165,81 @@
                         <button class="btn-primary">Calculate</button>
                     </div>
                 </div>
-                <!-- BMI calculator section ends here -->
             </div>
         </section>
-        <!-- BMI calculator chart and calculator section ends here -->
         <!-- meet our team sections starts here -->
-        <section class="meetup-team-title-section">
+        <section class="meetup-team-section container">
             <h2 class="meetup-team-title">Meet Our Team</h2>
             <p>Dedicated to helping you reach your goals. With combined years of experience, our team provides
                 personalized guidance and support. Let's transform together.</p>
         </section>
-        <section class="meetup-team-main-container">
-            <div class="meetup-contents">
-                <!-- card1 starts  -->
-                <div class="meetup-content">
-                    <img class="team-member-img" src="images/trainer1.png" alt="team member">
-                    <div class="team-member-info">
-                        <h2>Jerome Bell</h2>
-                        <p>Trainer</p>
-                    </div>
-                </div>
-                <!-- card 1 ends -->
-                <!-- card2 starts -->
-                <div class="meetup-content">
+         <div class="meetup-contents container">
+         <!-- card1 starts  -->
+            <div class="meetup-content">
+                 <img class="team-member-img" src="images/trainer1.png" alt="team member">
+                 <h2>Jerome Bell</h2>
+                    <p>Trainer</p>
+            </div>
+                  <!-- card2 starts -->
+            <div class="meetup-content">
                     <img class="team-member-img" src="images/trainer2.png" alt="team member">
-                    <div class="team-member-info">
-                        <h2>Cameron Williamson</h2>
-                        <p>Trainer</p>
-                    </div>
-                </div>
-                <!-- card2 ends -->
-                <!-- card3 starts -->
-                <div class="meetup-content">
+                    <h2>Cameron Williamson</h2>
+                    <p>Trainer</p>
+            </div>
+                 <!-- card3 starts -->
+                 <div class="meetup-content">
                     <img class="team-member-img" src="images/trainer3.png" alt="team member">
-                    <div class="team-member-info">
-                        <h2>Darrel Steward</h2>
-                        <p>Trainer</p>
-                    </div>
-                </div>
-                <!-- card3 ends -->
-                <!-- card4 starts  -->
-                <div class="meetup-content">
+                    <h2>Darrel Steward</h2>
+                    <p>Trainer</p>
+                 </div>
+                 <!-- card4 starts  -->
+                 <div class="meetup-content">
                     <img class="team-member-img" src="images/trainer4.png" alt="team member">
-                    <div class="team-member-info">
-                        <h2>Dianne Russel</h2>
-                        <p>Trainer</p>
-                    </div>
-                </div>
-                <!-- card4 ends -->
-                <!-- card5 starts  -->
-                <div class="meetup-content">
+                    <h2>Dianne Russel</h2>
+                    <p>Trainer</p>
+                 </div>
+                 <!-- card5 starts  -->
+                 <div class="meetup-content">
                     <img class="team-member-img" src="images/trainer5.png" alt="team member">
-                    <div class="team-member-info">
-                        <h2>Coddy Fisher</h2>
-                        <p>Trainer</p>
-                    </div>
-                </div>
-                <!-- card5 ends -->
-                <!-- card6 starts -->
-                <div class="meetup-content">
+                    <h2>Coddy Fisher</h2>
+                    <p>Trainer</p>
+                 </div>
+                 <!-- card6 starts -->
+                 <div class="meetup-content">
                     <img class="team-member-img" src="images/trainer6.png" alt="team member">
-                    <div class="team-member-info">
-                        <h2>Theresa Webb</h2>
-                        <p>Trainer</p>
-                    </div>
+                    <h2>Theresa Webb</h2>
+                    <p>Trainer</p>
                 </div>
-                <!-- card6 ends -->
             </div>
         </section>
-        <!-- meet our team sections ends here -->
-        <!-- analysis section starts here -->
-        <section class="meetup-team-title-section">
-            <h2 id="fitness-title" class="meetup-team-title">Enhance Your Fitness</h2>
-            <p>Analyze workouts, track progress, identify strengths and weaknesses, optimize performance, reach goals
-                faster, prevent injuries, personalize training plans.</p>
-        </section>
-        <section id="analysis-main-cotainer-id" class="analysis-main-container">
-            <!-- first card  start -->
-            <div id="analysis-first-card" class="analysis-card">
-                <div>
-                    <img class="analysis-images" src="images/activity tracker.png" alt="activity tracker">
-                </div>
-                <h4>Activity Tracker</h4>
-                <p>
-                    Track steps, calories, heart rate, sleep. Monitor daily activity, set goals, stay motivated. Gain
-                    insights into overall health and fitness progress.
-                </p>
-            </div>
-            <!-- first card end  -->
-            <!-- second card  start -->
-            <div id="analysis-second-card" class="analysis-card">
-                <div>
-                    <img class="analysis-images" src="images/fitness stats.png" alt="activity tracker">
-                </div>
-                <h4>Fitness Stats</h4>
-                <p>
-                    Track workouts, measure progress, analyze performance. See calories burned, distance covered, heart
-                    rate zones. Set goals, stay motivated, optimize training.
-                </p>
-            </div>
-            <!-- second card end  -->
-            <!-- third card  start -->
-            <div id="analysis-third-card" class="analysis-card">
-                <div>
-                    <img class="analysis-images" src="images/fitness tracker.png" alt="activity tracker">
-                </div>
-                <h4>Fitness Tracker</h4>
-                <p>
-                    Monitors steps, heart rate, sleep, calories. Sets goals, tracks progress, motivates movement.
-                    Gain insights, improve overall well-being.
-                </p>
-            </div>
-            <!-- third card end  -->
-        </section>
-        <!-- analysis section ends here  -->
     </main>
-    <!-- main ends here  -->
-    <!-- footer starts here  -->
-    <footer>
-        <section class="main-container">
-            <div class="footer-content1">
-                <div class="logo">
-                    <h1>Fitness</h1>
-                </div>
-                <div class="logo-description">
-                    <p>Achieve your fitness goals with dedication, nutrition, and expert guidance. Discover sustainable
-                        wellness and boundless energy. Your journey starts here.</p>
-                </div>
+    <footer class="footer">
+        <section class="footer-main">
+            <div class="fpart1">
+                <h2 >Fitness</h2>
+                <p >We believe fitness should be accessible to everyone, <br>everywhere, regardless of income or <br> access to a gym. With hundreds of professional workouts.</p>
             </div>
-            <div class="footer-content2">
-                <div class="get-start-contents">
-                    <div class="get-started-title">
-                        <h1>Get Started</h1>
-                    </div>
-                    <div>
-                        <p>Service</p>
-                    </div>
-                    <div>
-                        <p>Contact Us</p>
-                    </div>
-                    <div>
-                        <p>Affiliate Program</p>
-                    </div>
-                    <div>
-                        <p>About Us</p>
-                    </div>
-                </div>
-                <div class="get-start-contents">
-                    <div class="get-started-title">
-                        <h1>Get Started</h1>
-                    </div>
-                    <div>
-                        <p>Fitness</p>
-                    </div>
-                    <div>
-                        <p>Platform</p>
-                    </div>
-                    <div>
-                        <p>Workout Library</p>
-                    </div>
-                    <div>
-                        <p>App Design</p>
-                    </div>
-                </div>
+            <div class="fpart2">
+                <h3>Get Started</h3>
+                <p>Service</p>
+                <p>contact Us</p>
+                <p>Affilate Program</p>
+                <p>About Us           </p>
+            </div>
+        
+            <div class="fpart3">
+                <h3>Get Started</h3>
+                <p>Fitness</p>
+                <p>Platform</p>
+                <p>Workout Library</p>
+                <p>App Design</p>
             </div>
         </section>
+        <br><br>
         <hr>
-        <h4 class="copyright">All right reserved @Fitness center 2024</h4>
-    </footer>
-    <!-- footer ends here  -->
+        <br>
+        <p class="copyright"><small>All rights reserved @fitness</small></p>
+       </footer>
 </body>
 
 </html>
