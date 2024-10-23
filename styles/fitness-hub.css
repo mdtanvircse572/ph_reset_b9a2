@@ -472,6 +472,7 @@ select,
   row-gap: 10px;
   padding: 10px;
   justify-items: center;
+  margin-bottom: 10px;
 }
 
 .team-member-img {
