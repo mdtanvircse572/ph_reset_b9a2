@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Style+Script&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color1: rgb(255, 255, 255);
+  --color2: rgba(255, 255, 255, 0.5);
+  --color3: rgb(230, 83, 60);
+  --color4: rgb(0, 0, 0);
+}
+
+body{
+  background-color: var(--color4);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
